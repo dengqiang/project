@@ -1,0 +1,67 @@
+﻿{% extends 'base.html' %}
+{% block title %}
+	<title>main</title>
+{% endblock %}
+
+
+
+	{% block mid-bar %}
+	<div id="mid-bar">
+		
+			<div class="slider mid-width">	
+				<img id="obj" src="./pic/tpic/1.jpg" class="mid-width" />
+			</div>
+			<div class="wraper">
+					<div class="span1">
+							<div class="main-list-container">
+								<div class="mltile">
+									<div class="text">旅行推荐</div>
+								</div>
+			
+								<div class="mwraper main-list-item">
+									<div class="main-list-item-cover-wraper travo-block">
+										<div class="main-list-item-cover">
+											<a href="" targrt="_blank"><img src="/pic/1.jpg" style="width:100%"></img></a>
+										</div>
+									</div>
+								</div>
+								<div class="mwraper main-list-item">
+									<div class="main-list-item-cover-wraper travo-block">
+										<div class="main-list-item-cover">
+											<a href="" targrt="_blank"><img src="/pic/2.jpg" style="width:100%"></img></a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="span2">
+						<div class="sidebar">
+							<a href=""><img width="100%" src="/pic/new_trip1.png"></img></a>
+						</div>
+					</div>
+			</div>
+		
+	</div>
+<script type="text/javascript">
+	var curIndex=0;
+	var timeInterval=5000;
+	var arr=new Array();
+	arr[0]="/pic/tpic/1.jpg";
+	arr[1]="/pic/tpic/2.jpg";
+	arr[2]="/pic/tpic/3.jpg";
+	setInterval(changeImg,timeInterval);
+	function changeImg()
+	{
+		var obj=document.getElementById("obj")
+		if(curIndex==(arr.length-1))
+		{
+			curIndex=0;
+		}
+		else
+		{
+			curIndex+=1;
+		}
+		obj.src=arr[curIndex];
+	}
+</script> 
+	{% endblock %}

@@ -1,0 +1,57 @@
+﻿{% extends 'base.html'%}  
+{% block title %} 
+	<title>UserRegister</title>
+{% endblock %}
+{% block linkcss%}
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />   
+    <link rel="stylesheet" type="text/css" href="/css/lgore.css" />  
+{% endblock %}
+{% block mid-bar %}
+	<div id="mid-bar">
+		<h1>欢迎加入</h1>
+		<div class="outborder">
+			<div class="reg-place-style">
+					<form action="/UserRegister/" method="POST">{% csrf_token %} 
+						<div class="item extra-tips has-error">
+						<label> 邮箱</label>
+						<input id="email" class="basic-input" type="text" value="" tabindex="1" maxlength="60" name="form_email"></input>
+						</div>
+						<div class ="test">
+						{% if email_errors %}
+						<p class="epl">{{ email_errors }}</p>
+						{% endif %} 
+						</div>
+						<div class="item extra-tips has-error">
+						<label>密码 </label>
+						<input id="password" class="basic-input " type="password" maxlength="20" tabindex="2" name="form_password"></input>
+						</div>
+						<div class="extra-tips has-error">
+						<label>密码确认 </label>
+						<input id="password" class="basic-input-confirm" type="password" maxlength="20" tabindex="4" name="form_password_confrim"></input>
+						</div>
+						<div class="item extra-tips has-error">
+						<label>名号</label>
+						<input id="name" class="basic-input" type="text" value="" tabindex="3" name="form_name" maxlength="15"></input>
+						</div>
+						<div class ="test">
+						{% if name_errors %}
+						<p class="epl">{{ name_errors }}</p>
+						{% endif %}
+						</div> 
+						<div class="reg-item-submit">
+						<label></label>
+						<input id="button" class="btn-submit" type="submit" title="阅读并同意《使用协议》方可注册。" tabindex="6"  value="注册"></input>
+						</div>
+					</form>
+			</div>
+		
+			<div class="aside">
+				<p class="pl">
+					>已有账户
+					<a href="http://127.0.0.1:8000/login/" >直接登陆</a>
+				</p>
+			</div>
+		</div>
+ 	</div>
+{% endblock %}
+

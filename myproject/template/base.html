@@ -1,0 +1,73 @@
+<html>
+<head>
+	{% block title %}{% endblock %}
+	{% block linkcss %}
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	{% endblock %}
+</head>
+<body>
+	{% block top-bar %}
+	<div id="top-bar">
+		<div class="fonav">
+			<div class="nb-container">
+				<div class="navbar height-top-bar">
+					<div class="brand-wrap">
+						<a  class="icon-nav-brand-blue" href="http://127.0.0.1:8000/main/">hello world!</a>
+					</div>			
+				</div>
+			</div>
+			<div class="rnavbar height-top-bar">
+				<div class="nav-search">
+					<div class="global-search">
+						<input type="text" data-post="/search/destinations?key=" value=""></input>
+					
+					</div>
+				</div>
+				<div class="nav-navigate height-top-bar">
+					<ul class="navbarNavul height-top-bar">
+						<li class="navbar-li">
+							<a class="nb-nav-a" href="">广场</a>
+						</li>
+						<li class="navbar-li">
+							<a class="nb-nav-a" href="">目的地</a>
+						</li>
+							<li class="navbar-li">
+							<a class="nb-nav-a" href="">app下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-useinfo height-top-bar">
+					<div class="nb-use-in">
+						<a class="nb-user-login" href="http://127.0.0.1:8000/UserRegister/">注册</a>
+						<a class="nb-user-login" href="http://127.0.0.1:8000/login/">登陆</a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	{% block mid-bar %}
+	{% endblock %}	
+	
+
+	{% block bot-bar%}	
+	<div id="bot-bar">
+	
+                        <span>
+
+    © 2013－? footprint.com, all rights reserved
+
+                        </span>
+                        <span class="fright">
+                                <a href="http://127.0.0.1:8000/privacy/" class="icon-nav-brand-blue">隐私条款</a>
+                          
+                                <a href="http://127.0.0.1:8000/contact/" class="icon-nav-brand-blue">联系我们</a>
+                                
+                        </span>
+
+		
+	</div>
+	{% endblock %}
+</body>
+</html>

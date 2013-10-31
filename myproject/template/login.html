@@ -1,0 +1,63 @@
+﻿{% extends  'base.html' %}
+{% block title %}
+	<title>login</title>
+{% endblock %}
+{% block linkcss %} 
+	<link type="text/css" rel="stylesheet" href="/css/main.css" />
+	<link type="text/css" rel="stylesheet" href="/css/lgore.css" />
+{% endblock %}
+{% block mid-bar %}
+	<div id="mid-bar"> 
+			<h1>登陆</h1>
+			<div class="outborder">
+				<div class="login-place-style">
+					<form method="POST" action="/login/">{% csrf_token %}
+						<div style="float: left;width: 310px;">
+							<table>
+								<tbody>
+									<tr>
+										<td>邮箱地址</td><td>{{form.emailOrname}}</td>
+									</tr>
+									<tr>
+										<td style="float: right;">密码</td><td>{{form.password}}</td>
+									</tr>
+								</tbody>
+							</table>
+					
+							<div class="item-submit">
+								<label></label>
+								<input id="button" class="lgbtn-submit" type="submit" value="login"  title="阅读并同意《使用协议》方可注册。"></input>
+							</div>
+						</div>
+						
+					
+					
+						<div class="err-blank">	
+							<div class="email-error error-color" >
+							{% if noName %}	
+							<p>{{noName}}</p>
+							{% endif %}
+							</div>
+						</div>
+						<div class="err-blank">
+							<div class="pwd-error error-color">
+							{% if pwderror %}
+							<p>{{pwderror}}</p>
+							{% endif %}
+							</div>
+						</div>
+					</form>
+				</div>	
+						<div class="aside">
+							<ul class="ul-style">
+								<li class="ul-li-style">其他方式登陆:</li>
+								<li class="ul-li-style" ><a href=""><img src="/pic/qq.jpg"></img></a>
+								</li>
+								<li class="ul-li-style"><a href=""><img src="/pic/weibo.jpg"></img></a>
+								</li>
+							</ul>
+						</div>
+					
+			</div>
+		</div> 
+{% endblock %}

@@ -1,0 +1,29 @@
+﻿{% extends 'base.html' %}
+{% block title %}
+	<title>main</title>
+{% endblock %}
+{% block linkcss%}
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/form.css" />
+{% endblock %}
+{% block mid-bar %}
+	<div id="content">
+		<div class="section-container">
+			<h2>给游记取个名字</h2>
+			<form id="new_trip" class="new_trip" method="post" action="/trips" accept-charset="UTF-8">
+				<div class="elength"></div>
+				<div class="form-row">
+					<input id="trip_name" class="input-txt inset-shadow"  type="text" size="50" name="trip[name]" ></input>
+				</div>
+				<div class="form-row">
+					<input class="btn-l" type="submit" value="下一步" name="commit" disabled=""></input>
+				</div>
+		</div>
+	</div>
+<script type="text/javascipt">
+$(document).ready(function(){
+	$(".btn-l").removeAttr("disabled");
+	$(".btn-l").css("backgroud-color":"green");
+});
+</script>
+{% endblock %}

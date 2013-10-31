@@ -1,0 +1,66 @@
+.item-submit {
+	
+   margin-left: 34px;
+   width: 100px;
+ }
+#button {
+	width:100%;
+}
+.ulstyle {
+	list-style:none outside none;
+}
+.error-color {
+	color:red;
+}
+.form-style {
+	float: left;
+	width: 640px;
+}
+.email-error {
+	bottom:10px;
+}
+.pwd-error{
+	bottom:-18px;
+}
+.err-blank{
+	float: left; 
+	width: 240px;
+}
+.login-place-style{
+	float: left;
+	width: 640px;
+}
+.ul-li-style {
+	list-style: none outside none;
+}
+img {
+	width:30px;
+	height:30px;
+}
+.outborder{
+	height: 160;
+}
+.reg-place-style{
+	float: left;
+	width: 550px;
+	
+}
+.item {
+	margin-left:32px;
+	margin-top:10px;
+	margin-bottom:10px;
+}	
+.item-submit {
+    margin-left: 71px;
+    width: 100px;
+}
+.reg-item-submit{
+	margin-left: 71px;
+	width: 100px;
+}
+.aside {
+	float:left;
+}
+.ul-style{
+	margin-top:0px;
+}

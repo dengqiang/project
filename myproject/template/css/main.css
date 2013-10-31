@@ -1,0 +1,129 @@
+#top-bar {
+	width: 90%;
+	height: 50px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+.height-top-bar{
+	height:40px;
+}
+.mid-width {
+	width:100%;
+}
+.navbar {
+	margin:0px 20px;
+	float:left;
+}	
+.nb-container {
+    
+    float: left;
+}
+
+.brand-wrap {
+	padding-top:0px;
+}
+.icon-nav-brand-blue {
+	text-decoration:none;
+}
+.fonav{
+    background:gray;
+
+}
+.nav-search{
+    float:left;
+    margin: 13px 10px 0px 0px;
+    
+    margin-top:8px;
+}
+.nav-useinfo{
+    float:right;
+    margin-right:0px;
+   
+}
+.nav-navigate{
+   margin-left:12px;
+   float:left;
+}
+.rnavbar{
+
+ 
+	margin-left: 156px;
+	margin-right: 11px;
+}
+.navbarNavul{
+	margin-top:0px;
+}
+
+	
+.navbar-li{
+	list-style:none outside none;
+	float:left;
+	margin:10px;
+}
+.nb-nav-a{
+	text-decoration:none
+}
+.nb-use-in {
+	margin:10px;
+}
+.nb-user-login {
+	margin-right:15px;
+	float:right;
+	text-decoration:none;
+
+}
+#mid-bar {
+	width:57%;
+	margin-top:30px;
+	margin-right:auto;
+	margin-left:auto;
+
+}
+.wraper {
+	width: 739px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 1000px;
+}
+
+.span1 {
+	width:400px;
+	float:left;
+
+	margin-top: 40px;
+	
+}
+.mltile {
+	margin-bottom: 40px;
+	font-size: 33px;
+	border-bottom: 2px solid red;
+}
+.mwraper {
+	margin-top:60px;
+}
+.span2 {
+	float:left;
+	margin-left: 89px;
+	margin-top: 40px;
+}
+
+#bot-bar {
+    color: rgb(153, 153, 153);
+    padding-top: 6px;
+    overflow: hidden;
+    border-top: 1px dashed rgb(221, 221, 221);
+	width:57%;
+	margin-top:30px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.fright {
+    float: right;
+}
+.sidebar{
+	width: 250px;
+}
+.brand-wrap{
+	margin-top:10px;
+}

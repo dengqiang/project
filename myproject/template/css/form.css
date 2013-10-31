@@ -1,0 +1,30 @@
+#content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+	margin-top: 100px;
+}
+.section-container{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.input-txt {
+	font-size: 20px;
+	text-align: center;
+	width:100%;
+}
+.form-row {
+	margin-bottom:20px
+}
+.btn-l {
+	height: 43px;
+	width: 81px;
+}
+.btn-l-disable {
+	background-color: rgb(136, 136, 136);
+	
+}

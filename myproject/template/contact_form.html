@@ -1,0 +1,62 @@
+
+<html>
+<head>
+    <title>Contact us</title>
+    <link type="text/css" rel="stylesheet" href="/css/UserRegister.css"></link>
+</head>
+<body>
+    <div id="wrapper">
+    	<div id="head">
+		<div class="site-nav single-nav">
+			<div class="site-nav-logo">
+				<a href=""><img alt="mysite" src="/pic/p.jpg"></img></a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>联系我们</h1>
+		<div class="outborder">
+			<div class="article">
+				<form action="/contact/" method="post">{% csrf_token %}
+        			<div>
+				<label class="lmove">Subject:</label>
+				<input class="lmove" type="text" name="subject">
+       				</div>
+				<div>
+				<label>Your e-mail (optional):</label>
+				<input type="text" name="email">
+				</div>
+				<div>
+        			<label style="bottom: 71px; position: relative; left: 100px;" >Message:</label>
+				<textarea style="position: relative; left: 102px;" name="message" rows="7" cols="21"></textarea>
+				</div>
+        			<input style="position: relative; left: 182px;" type="submit" value="Submit">
+    				</form>
+			</div>
+			<div class="aside">
+				<p class="pl">
+					咨询电话：
+				</p>
+			</div>
+			<div class="extra"></div>
+		</div> 
+	</div>
+	<div id="footer">
+		<span>
+
+    © 2013－? footprint.com, all rights reserved
+
+                        </span>
+                        <span class="fright">
+                                <a>关于我们</a>
+                                <a>招聘人才</a>
+                                <a href="http://127.0.0.1:8000/contact/">联系我们</a>
+                                <a>帮助中心</a>
+                        </span>
+	
+	</div>
+    </div>
+</div>
+</body>
+</html>
+

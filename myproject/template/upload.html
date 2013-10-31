@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block mid-bar %}
+	<form method='POST'  enctype="multipart/form-data">{% csrf_token %}
+	
+	</form>
+	<img src="{{object.Imgupload.url}}"></img>	
+{% endblock %}
